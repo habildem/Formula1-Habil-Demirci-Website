@@ -849,3 +849,153 @@ transition: background-image 0.3s;
     font-size :15px;
   }
 
+
+
+  
+  .refleks{
+    height: 100vh;
+    background-color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header .naavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .naavbar .loogo {
+    color: #1d1d1f;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+  }
+  
+  .naavbar .loogo span {
+    color: #a31b1b;
+  }
+  
+  .naavbar .meenu-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+  }
+  
+  .naavbar a {
+    color: #1d1d1f;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .naavbar a:hover {
+    color: #a31b1b;
+  }
+  
+  .hero-sectionasd {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .hero-sectionasd .contentasd {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: #1d1d1f;
+  }
+  
+  .hero-sectionasd .contentasd h2 {
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 70px;
+  }
+  
+  .hero-sectionasd .contentasd p {
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: 15px;
+  }
+
+  #close-meenu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #haamburger-btn {
+    color: #1d1d1f;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header.show-mobile-menu::before {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+    }
+  
+    .naavbar .logo {
+      font-size: 1.7rem;
+    }
+  
+      
+    #haamburger-btn, #close-menu-btn {
+      display: block;
+    }
+  
+    .naavbar .meenu-links {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100vh;
+      background: #f5f5f7;
+      flex-direction: column;
+      padding: 70px 40px 0;
+      transition: left 0.2s ease;
+    }
+  
+    header.show-mobile-meenu .naavbar .meenu-links {
+      left: 0;
+    }
+  
+    .naavbar a {
+      color: #1d1d1f;
+    }
+  
+    .hero-sectionasd .contentasd {
+      text-align: center;
+    }
+  
+    .hero-sectionasd .contentasd :is(h2, p) {
+      max-width: 100%;
+    }
+  
+    .hero-sectionasd .contentasd h2 {
+      font-size: 2.3rem;
+      line-height: 60px;
+    }
+    
+    .hero-sectionasd .contentasd button {
+      padding: 9px 18px;
+      text-decoration: none;
+    }
+  }
+
+
